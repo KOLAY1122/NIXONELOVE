@@ -1,53 +1,22 @@
 <?php 
-	$myName = "mykola"."</br>";
-	echo $myName;
+    $myName = "Mykola"."</br>";
+    echo $myName;
 
-	$myAge = "20"."</br>";
-	echo $myAge;
+    $myAge = "20"."</br>";
+    echo $myAge;
 
-	$a = pi();
-    echo $a;
+    $a = pi();
+    echo $a."</br>";
 
     $full = array( 'alex', 'vova','tolya');
-    echo $short;
+    print_r($short) ;
 
-    $short = [
-    	'alex',
-    	'vova',
-    	'tolya',
-    	[
-    		'kostya',
-    		'olia'
-    	]
+    $short = ['alex','vova','tolya',['kostya','olia']
     ]; 
-    echo $short;
-    $shortOne = [
-    	'alex',
-    	'vova',
-    	'tolya',
-    	[
-    		'kostya',
-    		'olia',
-    		[
-    			'gosha',
-    			'mila',
-    		]
-    	]
-    ];
-    echo $shortTwo;
-    $shortTwo = [
-    	'alex',
-    	'vova',
-    	'tolya',
-    	[
-    		'kostya',
-    		'olia',
-    	],
-    	[
-    			'gosha',
-    			'mila',
-    	],
-    ];
-    echo $shortTwo;
+    print_r($short);
+    $shortA = ['alex','vova','tolya',['kostya','olia',['gosha','mila',]]];
+    print_r($shortA);
+    $shortB = ['alex','vova','tolya',['kostya','olia',],['gosha','mila',],];
+    print_r($shortB);
 
  ?>
